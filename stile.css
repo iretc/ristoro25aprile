@@ -1,0 +1,128 @@
+body,html{margin:0; padding:0px;background: #eee;height:100%;}
+
+@font-face {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+}
+
+img  {
+
+	padding-top: 2em;
+}
+
+h1 img {
+
+		padding: 0%;
+		width: 200px; height: auto;
+}
+
+h2{
+	font-family: 'Hind Siliguri', sans-serif;
+	background: white;
+}
+
+
+#copertina{ 
+	font-family: canter;
+	font-weight: bold;
+	font-size: 20px; 
+	text-align: center;
+	padding:15px 30px;
+	color:#213f87;
+	opacity: 0.8; 
+	width:60%;
+	margin-right:20%;
+	margin-left:20%;}
+
+.container{
+	height: 100%;
+	width: 100% ;
+	position: relative; 
+	background: url(assets/images/ristoro.jpg);
+	background-size: 100% 100%; 
+	}
+
+.fab fa-facebook-square {
+
+	position: absolute;
+}
+	
+	.bottom-bar {
+	    position:absolute; /**/
+	    bottom:0;
+	    overflow: hidden;
+	    background: white;
+	    /*background-image: ./sfondo.jpg;*/
+	    margin: 0;
+	    width: 100%;
+	    height:65px;      /**/
+	    border-top: 10px solid #213f87;
+	} 
+	.bottom-bar:hover {height:370px; 
+		background:rgba(255, 255, 255, 0.7);}
+	
+	
+		.bottom-bar .boxs {
+		    white-space: nowrap;
+		    text-align: center;
+		}
+			
+			.bottom-bar .box {
+			    display: inline-block;
+			    padding: 0 15px;
+			    margin: 5px;
+			    width:280px;
+			    height:340px;
+			    color:#213f87; font-family: arial; text-decoration: none; text-transform: uppercase;
+			    
+			}
+			
+			.bottom-bar .box a{width:100%; float:left;color:#213f87;padding:20px 0 30px 0;text-decoration: none; }
+			.cont-box{width:100%; float:left;white-space: normal;}
+			.cont-box p{color:#999;}
+			.cont-box ul li{color:#999;text-align: left}
+			.bottom-bar .box img{width: 100%; height:auto;float:left;}
+			.bottom-bar .box a:hover {text-decoration: underline;}
+
+
+
+.animate{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+
+	.container{padding-top:150px}
+
+	.bottom-bar { position:relative; height: auto; float:left; width:100%;}
+	.bottom-bar:hover {height:auto}
+	
+	
+	.bottom-bar .boxs {white-space: normal;}
+	.bottom-bar .box {float:left; width:100%;height: auto;padding:0;margin:0;}
+
+	/*#copertina{ }???????????????????????????*/
+
+}
+
+.in-box {max-width: 100% !important;}
+
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; /* Definisco l'aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+.google-maps > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+

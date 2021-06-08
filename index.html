@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+	<title>Ristoro 25 Aprile</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DREJNPN94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3DREJNPN94');
+</script>
+	
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 	<link href="stile.css" rel="stylesheet" />
+ 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ 	<script src="https://kit.fontawesome.com/00fc8f3c3a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+ 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" rel="stylesheet">	
+
+</head>
+<body class="container-fluid">
+
+<div class="container">
+	<a href="https://www.facebook.com/ristoro25aprileaffittacamere" class="link"><i class="fab fa-facebook-square"></i></a>
+
+	<div class="full-panel" id="home">  
+    
+    	<div id="copertina">
+    		<h1><a href="#"><img src="assets/images/logo.jpg" alt="logo del ristoro 25 aprile"></a></h1>
+    		<h2>L'AFFITTACAMERE A TOLMEZZO</h2>
+    	</div>    
+    
+   	</div> 
+
+	<div class="bottom-bar animate">
+	    <div class="boxs">	
+		    
+		    <div class="box"> 
+		    	<a href="about.html">About <img class="in-box" src="assets/images/IMG_3769.jpg"/> </a>
+		    	 
+		    </div>
+
+		    <div class="box"> 
+		    	<a href="camere.html">Camere e Spazi<img class="in-box" src="assets/images/camerehome.jpg"/> </a>
+		       	 
+		    </div>
+
+		    <div class="box"> 
+		    	<a href="diconodinoi.html">Dicono di noi <img class="in-box" src="assets/images/diconohome.jpg"/> </a>
+		    	
+		    </div>
+		    <div class="box"> 
+		    	<a href="dintorni.html">Dintorni <img class="in-box" src="assets/images/dintornihome.jpg"/></a>
+		    	 
+		    </div>
+		    <div class="box"> 
+		    	<a href="contatti.html">Contatti <img class="in-box" src="assets/images/contattihome.jpg"/></a>
+		    	 
+		    </div>
+	    </div>
+	</div>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script>
+$(function(){
+
+    var $bl    = $(".bottom-bar"),
+        $th    = $(".boxs"),
+        blW    = $bl.outerWidth(),
+        blSW   = $bl[0].scrollWidth,
+        wDiff  = (blSW/blW)-1,  // widths difference ratio
+        mPadd  = 60,  // Mousemove Padding
+        damp   = 20,  // Mousemove response softness
+        mX     = 0,   // Real mouse position
+        mX2    = 0,   // Modified mouse position
+        posX   = 0,
+        mmAA   = blW-(mPadd*2), // The mousemove available area
+        mmAAr  = (blW/mmAA);    // get available mousemove fidderence ratio
+
+    $bl.mousemove(function(e) {
+        mX = e.pageX - this.offsetLeft;
+        mX2 = Math.min( Math.max(0, mX-mPadd), mmAA ) * mmAAr;
+    });
+
+    setInterval(function(){
+        posX += (mX2 - posX) / damp; // zeno's paradox equation "catching delay"    
+        $th.css({marginLeft: -posX*wDiff });
+    }, 10);
+
+});
+</script>
+
+</body>
+</html>
+
