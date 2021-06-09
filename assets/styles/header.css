@@ -2,10 +2,11 @@ header{
     box-sizing: border-box;
     text-align: center;
     width: 100%;
-    background-color: #213f87;
+    background-color: white;
     overflow: hidden;
-    height: 190px;
+    height: 120px;
     font-family: 'Hind Siliguri', sans-serif;
+
    } 
 
 header a{
@@ -28,6 +29,7 @@ ul {
     padding: 0px;
     margin-top: 0;
     text-align: center;
+    z-index: 1000;
 }
 
 
@@ -66,9 +68,13 @@ ul li{
 
 @media (max-width: 767px) {
 
-    nav ul li { display: block;
+    nav ul li { 
+        display: inline;
         margin-bottom: 50px;
         z-index: 1;}
+    header{
+    height: 280px;
+    }
     header h1{
         float: none;
 
