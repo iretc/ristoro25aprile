@@ -13,10 +13,34 @@
     <link href="assets/styles/demo.css" rel="stylesheet">
     <link href="assets/styles/header.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00fc8f3c3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
 
 </head>
 <body>
+
+
+
+<div
+        class="parallax-image-wrapper"
+        data-anchor-target="#page-intro"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)">
+
+    <div
+            class="parallax-image"
+            style="background-image:url(assets/images/IMG_3776.jpg)"
+            data-anchor-target="#page-intro"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+
+    </div>
+</div>
+
+
+<div id="skrollr-body">
+
 <header>
  <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
             
@@ -47,28 +71,6 @@
 
 </header>
 
-
-
-<div
-        class="parallax-image-wrapper"
-        data-anchor-target="#page-intro"
-        data-bottom-top="transform:translateY(200%)"
-        data-top-bottom="transform:translateY(0)">
-
-    <div
-            class="parallax-image"
-            style="background-image:url(assets/images/IMG_3776.jpg)"
-            data-anchor-target="#page-intro"
-            data-bottom-top="transform: translateY(-80%);"
-            data-top-bottom="transform: translateY(80%);"
-            >
-
-    </div>
-</div>
-
-
-<div id="skrollr-body">
-
     <div id="page-intro" class="gap" style="background-image:url(assets/images/IMG_3776.jpg">
         <h1 id="titolointro">CONTATTI</h1>
     </div>
@@ -86,10 +88,32 @@
 
         </p>
 
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+<form action="https://send.pageclip.co/SQRn5L2doPFjobopiDYDLopdVhHlLvwH" class="pageclip-form" method="post">
+  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+   <label for="nome">Nome e Cognome</label>
+  <input type="text" id="nome" name="nome" placeholder="Inserisci Nome e Cognome">
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="Indirizzo di posta elettronica">
+
+  <label for="tel">Telefono</label>
+  <input type="text" id="tel" name="tel" placeholder="Numero di telefono">
+
+  <label for="msg">Messaggio</label>
+  <textarea id="msg" name="msg" placeholder="Scrivi il tuo messaggio"></textarea>
+
+  <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+  <button type="submit" class="pageclip-form__submit">
+    <span>INVIA</span>
+  </button>
+</form>
 
 
 
-<form name="formmail" method="post" action="formmail.php" onsubmit="return controlloForm()">
+
+<!--<form name="formmail" method="post" action="formmail.php" onsubmit="return controlloForm()">
 
 
   <input type="hidden" name="successo" value="C:/Users/User/Documents/Università/SDC/III_anno/Informatica_Umanistica/ristoro_25_aprile/sito%20ire/sito%20ire/contattiinvio.html">
@@ -108,7 +132,7 @@
 
   <input type="submit" value="Invia Messaggio">
 
-</form>
+</form>-->
 
 
 
@@ -144,7 +168,7 @@
 
 <script src="assets/scripts/skrollr.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
     $( document ).ready(function() {
         skrollr.init();    
