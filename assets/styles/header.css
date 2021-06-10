@@ -51,10 +51,11 @@ ul a{
 }
 
 ul li a.active{
-    color: white;
+    color: white !important;
     background-color: #213f87;
     pointer-events: none;
 }
+
 
 ul li a:hover {
     opacity: 1;
