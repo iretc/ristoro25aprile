@@ -53,6 +53,11 @@ h1{font-size: 40px; color: #213f87; padding-top: 5%;}
 h2{font-size: 35px;padding-top: 5%;}
 h3{font-size: 30px; padding-top: 3%;}
 h4{font-size: 30px;}
+h5{font-size: 25px;}
+
+p li{
+    text-align: left;
+}
 
 .skrollr-desktop body {
     height:100% !important;
@@ -62,6 +67,19 @@ h4{font-size: 30px;}
     height:100%;
     position:relative;
     overflow: hidden;
+}
+
+a {
+    color: #213f87;
+}
+
+a:visited{
+    color: #6600a9;
+}
+
+#skrollr-body a:visited{
+    color: #213f87;
+    
 }
 
 
@@ -132,7 +150,6 @@ h4{font-size: 30px;}
     text-align: center !important;
     color: #fff;
     font: normal 60px 'Droid Serif', sans-serif;
-    /*padding-top: 24vh;*/
     padding-top: 0px;
     margin-top: 24vh !important;
     margin-left: 25%;
@@ -537,6 +554,12 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+@media (max-width: 375px){
+    .google-maps{
+        width: 70%;
+
+    }
+}
 
 
 
