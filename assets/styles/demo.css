@@ -28,7 +28,11 @@ a img{
     
     }
 
-
+#doc{
+    width: 50% !important;
+    height: auto;
+    border: 2px solid #213f87;
+}
 
 
 /*  Page styles  */
@@ -55,9 +59,10 @@ h3{font-size: 30px; padding-top: 3%;}
 h4{font-size: 30px;}
 h5{font-size: 25px;}
 
-p li{
+/*p li{
     text-align: left;
-}
+    width: 50%;
+}*/
 
 .skrollr-desktop body {
     height:100% !important;
@@ -73,16 +78,9 @@ a {
     color: #213f87;
 }
 
-a:visited{
-    color: #6600a9;
-}
-
-#skrollr-body a:visited{
-    color: #213f87;
+#list-item{
     
 }
-
-
 /*  Styles for this example */
 
 
@@ -682,9 +680,9 @@ footer .footer-left{
     float: left;
 }
 
-footer h3{
+footer h5{
     color:  #5383d3;
-    font: normal 36px 'Hind Siliguri';
+    font: normal 25px 'Hind Siliguri';
     margin: 0;
 }
 footer p{
@@ -788,3 +786,7 @@ footer form i{
     }
 
 }
+
+
+
+
