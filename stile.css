@@ -45,6 +45,7 @@ h2{
 .fab fa-facebook-square {
 
 	position: absolute;
+	
 }
 	
 	.bottom-bar {
@@ -52,7 +53,6 @@ h2{
 	    bottom:0;
 	    overflow: hidden;
 	    background: white;
-	    /*background-image: ./sfondo.jpg;*/
 	    margin: 0;
 	    width: 100%;
 	    height:65px;      /**/
@@ -94,9 +94,12 @@ h2{
 	transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
 
-	.container{padding-top:150px}
+	.container{
+		padding-top:150px;
+		background: url(assets/images/ristoro2.jpg);	
+				}
 
 	.bottom-bar { position:relative; height: auto; float:left; width:100%;}
 	.bottom-bar:hover {height:auto}
@@ -105,7 +108,10 @@ h2{
 	.bottom-bar .boxs {white-space: normal;}
 	.bottom-bar .box {float:left; width:100%;height: auto;padding:0;margin:0;}
 
-	/*#copertina{ }???????????????????????????*/
+	#copertina{ 
+	
+
+	}
 
 }
 
