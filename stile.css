@@ -21,6 +21,10 @@ h2{
 	background: white;
 }
 
+a {
+    color: #213f87;
+}
+
 
 #copertina{ 
 	font-family: canter;
@@ -98,7 +102,8 @@ h2{
 
 	.container{
 		padding-top:150px;
-		background: url(assets/images/ristoro2.jpg);	
+		background: url(assets/images/ristoro3.jpg);
+		background-size: 100%;	
 				}
 
 	.bottom-bar { position:relative; height: auto; float:left; width:100%;}
@@ -108,10 +113,7 @@ h2{
 	.bottom-bar .boxs {white-space: normal;}
 	.bottom-bar .box {float:left; width:100%;height: auto;padding:0;margin:0;}
 
-	#copertina{ 
-	
-
-	}
+	#copertina{}
 
 }
 
