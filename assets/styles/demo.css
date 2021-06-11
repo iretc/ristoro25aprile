@@ -28,6 +28,11 @@ a img{
     
     }
 
+#doc{
+    width: 50% !important;
+    height: auto;
+    border: 2px solid #213f87;
+}
 
 
 /*  Page styles  */
@@ -74,7 +79,7 @@ a {
 }
 
 #list-item{
-    
+
 }
 /*  Styles for this example */
 
@@ -152,7 +157,8 @@ a {
 @media (max-width: 575px) {
     #page-intro h1 {
         font-size: 42px;
-        padding-top: 15vh;
+        padding-right: 2000px !important;
+        padding-left: 3px;
     }
 }
 
