@@ -116,6 +116,13 @@
 
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
+var form = document.querySelector('.pageclip-form')
+Pageclip.form(form, {
+  
+  successTemplate: '<span>Messaggio inviato!</span>'
+})
+
+
 
 <!--<form name="formmail" method="post" action="formmail.php" onsubmit="return controlloForm()">
 
