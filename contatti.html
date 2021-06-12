@@ -116,34 +116,9 @@
 
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
-var form = document.querySelector('.pageclip-form')
-Pageclip.form(form, {
-  
-  successTemplate: '<span>Messaggio inviato!</span>'
-})
 
 
 
-<!--<form name="formmail" method="post" action="formmail.php" onsubmit="return controlloForm()">
-
-
-  <input type="hidden" name="successo" value="C:/Users/User/Documents/Università/SDC/III_anno/Informatica_Umanistica/ristoro_25_aprile/sito%20ire/sito%20ire/contattiinvio.html">
-
-  <label for="nome">Nome e Cognome</label>
-  <input type="text" id="nome" name="nome" placeholder="Inserisci Nome e Cognome">
-
-  <label for="email">Email</label>
-  <input type="text" id="email" name="email" placeholder="Indirizzo di posta elettronica">
-
-  <label for="tel">Telefono</label>
-  <input type="text" id="tel" name="tel" placeholder="Numero di telefono">
-
-  <label for="msg">Messaggio</label>
-  <textarea id="msg" name="msg" placeholder="Scrivi il tuo messaggio"></textarea>
-
-  <input type="submit" value="Invia Messaggio">
-
-</form>-->
 
 
 
@@ -230,6 +205,12 @@ function controlloForm() {
     return true;
   }
 }
+    
+    var form = document.querySelector('.pageclip-form')
+Pageclip.form(form, {
+  
+  successTemplate: '<span>Messaggio inviato!</span>'
+})
 </script>
 
 
