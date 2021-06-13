@@ -28,7 +28,7 @@ a img{
     
     }
 
-#doc{
+.doc{
     width: 50% !important;
     height: auto;
     border: 2px solid #213f87;
